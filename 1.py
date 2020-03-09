@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import requests as req
-import json,sys,time
+import json,sys,time,random
 #先注册azure应用,确保应用有以下权限:
 #files:	Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
 #user:	User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All
@@ -9,9 +9,9 @@ import json,sys,time
 
 ###################################################################
 #把下方单引号内的内容改为你的应用id                                         #
-id=r'1350ba69-e913-4181-b0f3-7129770a35df'                         
+id=r'a6802e90-9192-4620-9967-a8e9e2e073ab'                         
 #把下方单引号内的内容改为你的应用机密                                       #
-secret=r'E=-Tj0_J0nNNT9W6=lkWk22j-@/Lcz=O'                                           
+secret=r'qaXNJ.1f3:23VCeHwJrC-h.VaZ@_=Xl]'                                           
 ###################################################################
 
 
@@ -83,5 +83,5 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(3):
+for _ in range(random.randint(20,150)):
     main()
